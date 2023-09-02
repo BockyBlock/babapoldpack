@@ -1,0 +1,37 @@
+table.insert(mod_hook_functions["turn_end"],
+	function()
+		for i,unit in ipairs(units) do
+			local name = unit.strings[UNITNAME]
+			unit.solidcond = false
+			unit.nervouscond = false
+			local canstopyou = hasfeature(name,"is","stop",unit.fixed) or hasfeature(name,"is","push",unit.fixed) or hasfeature(name,"is","pull",unit.fixed)
+			local isweak = hasfeature(name,"is","weak",unit.fixed)
+			local ismortal = hasfeature(name,"is","weak",unit.fixed) or hasfeature(name,"is","crumble",unit.fixed) or hasfeature(name,"is","splat",unit.fixed) or hasfeature(name,"is","sink",unit.fixed) or hasfeature(name,"is","bonus",unit.fixed)
+			local issafe = hasfeature(name,"is","safe",unit.fixed)
+			
+			if ((findfeature(nil, "is", "defeat") ~= nil) and hasfeature(name,"is","you",unit.fixed)) then
+				unit.nervouscond = true
+			end
+			if ((findfeature(nil, "is", "open") ~= nil) and hasfeature(name,"is","shut",unit.fixed)) then
+				unit.nervouscond = true
+			end
+			if ((findfeature(nil, "is", "shut") ~= nil) and hasfeature(name,"is","open",unit.fixed)) then
+				unit.nervouscond = true
+			end
+			if ((findfeature(nil, "is", "hot") ~= nil) and hasfeature(name,"is","melt",unit.fixed)) then
+				unit.nervouscond = true
+			end
+
+			if (isweak == nil) and (canstopyou ~= nil) then
+				unit.solidcond = true
+			end
+			if (ismortal ~= nil) then
+				unit.nervouscond = true
+			end
+			if (issafe ~= nil) then
+				unit.nervouscond = false
+			end
+			
+		end
+	end
+)

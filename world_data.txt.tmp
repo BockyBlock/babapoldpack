@@ -1,0 +1,12 @@
+[levels]
+levelid=33
+rolling_levelid=31
+
+[general]
+start=19level
+name=poldpack
+author=theopold!?
+mods=1
+themecount=0
+firstlevel=19level
+

@@ -1,0 +1,8 @@
+sign=An object that BOUNCES will=turn around if it walks into a wall.=Very, very simple!
+sign=Anything that SPLATS will explode=if it fails to move. A bit like=Weak, but without the... other stuff.
+sign=If an object CRUMBLES, it will=explode if it overlaps any object.=A mix of Sink or Weak.
+sign=The entire level will=disappear if the NOPE property=is being used in any rule.
+sign=KATA is a direction block=that causes an object to face=into the fourth dimension.
+sign=An object that WASD will turn=in the direction that any YOU=object would face. 
+sign=The prefix SOLID activates as long=as an object prevents movement=onto its own tile.
+sign=The prefix DELICATE activates as long=as an object can self-destruct into=another object. Hard to explain.
