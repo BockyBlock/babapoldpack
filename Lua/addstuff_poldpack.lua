@@ -152,5 +152,18 @@ editor_objlist["text_kata"] =
 	}
 
 table.insert(editor_objlist[editor_objlist_reference["text_facing"]].argextra, "kata")
+	
+	table.insert(editor_objlist_order, "text_powering")
+editor_objlist["text_powering"]  = {
+		name = "text_powering",
+		unittype = "text",
+		tags = {"text_condition","machine","poldpack"},
+		tiling = -1,
+		type = 7,
+		layer = 20,
+		sprite_in_root = false,
+		colour = {6, 1},
+		colour_active = {2, 4}
+	}
 
 formatobjlist()

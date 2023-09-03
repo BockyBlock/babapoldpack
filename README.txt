@@ -3,7 +3,7 @@ Version 1.1
 HOW TO INSTALL
 Copy the "lua" and "sprites" folder to your own levelpack. That's all there is to it!
 
-EXTENSIONS
+ADDITIONS
 - BOUNCE causes objects to turn around if their movement fails
 - SPLAT causes objects to die if their movement fails
 - CRUMBLE causes objects to die if they are not lonely
@@ -37,7 +37,7 @@ POSSIBLE PLANS?
 - YOUR (Prefix, activates for all controllable objects)
 - P1 (Property, opposite of WASD)
 
-CHANGELOG
+CHANGELOG 1.0
 - Attempted to add a unique "direction bank" for objects facing KATA, doesn't seem to work :(
 - Various visual things from Particlels
 - Fixed conditions
