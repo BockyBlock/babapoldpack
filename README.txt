@@ -1,4 +1,5 @@
 Version 1.1
+Notice: This modpack is ollllld.
 
 HOW TO INSTALL
 Copy the "lua" and "sprites" folder to your own levelpack. That's all there is to it!
